@@ -1,225 +1,582 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-
-  <title>My Blog</title>
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Blog</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Topics
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Mobile Development</a></li>
-              <li><a class="dropdown-item" href="#">Web Development</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Support</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/contact.html">contact Us</a>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-success" type="submit">
-            Search
-          </button>
-        </form>
-      </div>
-      <div class="mx-2">
-        <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
-        <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Login Modal -->
-  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        >
+        <title>EzGlam</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">EzGlam</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Store
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <!-- <a class="dropdown-item" href="#">Premium</a> -->
+                                <a class="dropdown-item text-primary" href="https://ezglam.net/get_type_categories?type_id=1&type_name=PREMIUM">Premium</a>
+                            </li>
+                            <li>
+                                <!-- <a class="dropdown-item" href="#">Elite</a> -->
+                                <a class="dropdown-item text-primary" href="https://ezglam.net/get_type_categories?type_id=2&type_name=ELITE">Elite</a>
+                            </li>
+                            <!-- <li>
+                                <hr class="dropdown-divider">
+                            </li> -->
+                            <!-- <li>
+                                <a class="dropdown-item" href="#">Support</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact copy.html">contact Us</a>
+                    </ul>
+                    <form class="d-flex">
+                        <input
+                            class="form-control me-2"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"
+                        >
+                        <button class="btn btn-outline-success" type="submit">
+                            Search
+                        </button>
+                    </form>
+                </div>
+                <div class="mx-2">
+                    <button
+                        class="btn btn-danger"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#loginModal"
+                    >Login</button>
+                    <button
+                        class="btn btn-danger"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#signupModal"
+                    >SignUp</button>
+                </div>
+            </div>
+        </nav>
+        <!-- Login Modal -->
+        <div
+            class="modal fade"
+            id="loginModal"
+            tabindex="-1"
+            aria-labelledby="loginModal"
+            aria-hidden="true"
+            role="dialog"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModal">Login to EzGlam</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp"
+                                >
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          Please Login...
+        <!-- SignupModal -->
+        <div
+            class="modal fade"
+            id="signupModal"
+            tabindex="-1"
+            aria-labelledby="signupModal"
+            aria-hidden="true"
+            role="dialog"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModal">Sign Up to EzGlam</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp"
+                                >
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="ConfirmexampleInputPassword1" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="ConfirmexampleInputPassword1">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Create an Account</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SignupModal -->
-  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">SignUp</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img
-          src="https://images.unsplash.com/photo-1474224160858-bde653bbc5a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-          class="d-block w-100" alt="xxx" height="405">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Welcome to my Blog</h5>
-          <p>Nature , Films , Games.</p>
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                ></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        src="banner2.jpg"
+                        class="d-block w-100"
+                        alt="xxx"
+                        height="405"
+                    >
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Welcome to my Blog</h5> -->
+                        <h5 class="text-dark">Welcome to Ezglam</h5>
+                        <!-- <p>Nature , Films , Games.</p>
           <button class="btn btn bg-warning">Nature</button>
           <button class="btn btn bg-primary">Films</button>
-          <button class="btn btn bg-light">Games</button>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img
-        alt="draw" src="https://images.unsplash.com/photo-1474524955719-b9f87c50ce47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
-        class="d-block w-100" height="405">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Welcome to my Blog</h5>
-          <p>Nature , Films , Games.</p>
+          <button class="btn btn bg-light">Games</button> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        alt="draw"
+                        src="banner3.jpg"
+                        class="d-block w-100"
+                        height="405"
+                    >
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Welcome to my Blog</h5> -->
+                        <h5 class="text-dark">Welcome to Ezglam</h5>
+                        <!-- <p>Nature , Films , Games.</p>
           <button class="btn btn bg-warning">Nature</button>
           <button class="btn btn bg-primary">Films</button>
-          <button class="btn btn bg-success">Games</button>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="https://images.unsplash.com/photo-1692374227159-2d3592f274c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-          class="d-block w-100" alt="..." height="405">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Welcome to my Blog</h5>
-          <p>Nature , Films , Games.</p>
+          <button class="btn btn bg-success">Games</button> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="banner4.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                        height="405"
+                    >
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Welcome to my Blog</h5> -->
+                        <h5 class="text-dark">Welcome to Ezglam</h5>
+                        <!-- <p>Nature , Films , Games.</p>
           <button class="btn btn bg-warning">Nature</button>
           <button class="btn btn bg-primary">Films</button>
           <button class="btn btn bg-danger">Games</button>
+        </div> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="ban1.jpg"
+                        class="d-block w-100"
+                        alt="abc"
+                        height="405"
+                    >
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Welcome to my Blog</h5> -->
+                        <h5 class="text-dark">Welcome to Ezglam</h5>
+                        <!-- <p>Nature , Films , Games.</p>
+          <button class="btn btn bg-warning">Nature</button>
+          <button class="btn btn bg-primary">Films</button>
+          <button class="btn btn bg-danger">Games</button>
+        </div> -->
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev"
+                >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next"
+                >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- Services -->
+            <div class="container my-3">
+                <h1 class="text-center"> Our Services</h1>
+            </div>
+            <!-- <h3 class="text-center"> Our Services </h3> -->
+            <div class="container my-2">
+                <div class="row mb-2">
+                    <div class="col-md-6">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <!-- <a href="http://ezglam.net/get_type_categories?type_id=1&amp;type_name=PREMIUM">Premium <i class="fa fa-angle-right" aria-hidden="true"></i></a> -->
+                                <strong class="d-inline-block mb-2 text-primary">Premium</strong>
+                                <!-- <a href="https://ezglam.net/get_type_categories?type_id=1&type_name=PREMIUM">Premium</a> -->
+                                <h3 class="mb-0">Make-Up</h3>
+                                <!-- <div class="mb-1 text-muted">June 7</div> -->
+                                <p class="card-text mb-auto">
+                                    Are you searching for Beauty Salons ? You are at right place
+                                </p>
+                                <!-- <a href="#" class="stretched-link">Continue reading</a> -->
+                                <a class="text-decoration-none" href="https://ezglam.net/get_type_categories?type_id=1&type_name=PREMIUM">
+                                    <h5>Premium</h5>
+                                </a>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <img
+                                    class="bd-placeholder-img"
+                                    width="200"
+                                    height="250"
+                                    src="premium1.jpeg"
+                                    alt=""
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2 text-success">Elite</strong>
+                                <h3 class="mb-0">Face care</h3>
+                                <!-- <div class="mb-1 text-muted">Jan 7</div> -->
+                                <p class="mb-auto">
+                                    Makeup has been a staple for millennia on almost everyone's vanity tables and royal
+                                halls. As a woman, even if I have a love-hate relationship with makeup, I can feel the
+                                passion of beauty
+                                experts, gurus, influencers, and daily users worldwide.
+                                </p>
+                                <a class="text-decoration-none" href="https://ezglam.net/get_type_categories?type_id=2&type_name=ELITE">
+                                    <h5>Elite</h5>
+                                </a>
+                                <!-- <a href="https://ezglam.net/get_type_categories?type_id=1&type_name=PREMIUM"><h5>Premium</h5></a> -->
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <img
+                                    class="bd-placeholder-img"
+                                    width="200"
+                                    height="250"
+                                    src="elite1.jpeg"
+                                    alt=""
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Products -->
+            <div class="container my-3">
+                <h1 class="text-center"> Our Products</h1>
+            </div>
+            <div class="product_section pt-5 pb-5">
+                <div class="container">
+                    <div class="productSlider">
+                        <div class="sliderItem">
+                            <div class="sliderInner">
+                                <a href="#" aria-label="Read more about Seminole tax hike">
+                                    <img
+                                        class="rounded mx-auto d-block"
+                                        src="http://ezglam.net/public/images/products/service_image-1636187245.jpg"
+                                        alt="egh"
+                                        height="240px"
+                                        width="240px"
+                                        justify-content="center"
+                                    >
+                                </a>
+                                <!-- <a href="#">
+                                    LOREAL MYTHIC OIL SHAMPOO (250ml)
+                                </a> -->
+                                <p class="text-center">
+                                    <a class="text-decoration-none" href="#">
+                                        LOREAL MYTHIC OIL SHAMPOO (250ml)
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sliderItem">
+                            <div class="sliderInner">
+                                <!-- <img href="#"> -->
+                                <img
+                                    class="rounded mx-auto d-block"
+                                    src="http://ezglam.net/public/images/products/service_image-1636183829.jpg"
+                                    alt=""
+                                    height="240px"
+                                    width="240px"
+                                >
+                                <!-- <img src="banner4.jpg.crdownload" class="d-block w-100" alt="..." height="405"> -->
+                            </a>
+                            <!-- <a href="#">
+                                LOREAL XTENSO CARE SHAMPOO (250ml)
+                            </a> -->
+                            <p class="text-center">
+                                <a class="text-decoration-none" href="#">
+                                    LOREAL XTENSO CARE SHAMPOO (250ml)
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sliderItem">
+                        <div class="sliderInner">
+                            <a href="#">
+                                <img
+                                    class="rounded mx-auto d-block"
+                                    src="http://ezglam.net/public/images/products/service_image-1634891020.jpg"
+                                    alt="dgh"
+                                    height="240px"
+                                    width="240px"
+                                >
+                            </a>
+                            <!-- <a href="#">
+                                LOREAL DENSITY ADVANCED SHAMPOO (300ml)
+                            </a> -->
+                            <p class="text-center">
+                                <a class="text-decoration-none" href="#">
+                                    LOREAL DENSITY ADVANCED SHAMPOO (300ml)
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <div class="container my-2">
-    <div class="row mb-2">
-      <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary">World</strong>
-            <h3 class="mb-0">Environment</h3>
-            <div class="mb-1 text-muted">June 7</div>
-            <p class="card-text mb-auto">An Environment is everything that is around us, which includes both living and
-              nonliving things such as soil, water, animals and plants.</p>
-            <a href="#" class="stretched-link">Continue reading</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <img class="bd-placeholder-img" width="200" height="250"
-              src="https://images.unsplash.com/photo-1670436435847-160ac8dd8d31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3xFZ0ZZVDcxbVdSY3x8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60"
-              alt="">
-
-          </div>
+        <!-- Testimonials -->
+        <div class="container my-3">
+            <h1 class="text-center"> HAPPY TESTIMONIALS</h1>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-success">Design</strong>
-            <h3 class="mb-0">Nature</h3>
-            <div class="mb-1 text-muted">Jan 7</div>
-            <p class="mb-auto">Nature refers to the phenomena of the physical world, and also to life in general.</p>
-            <a href="#" class="stretched-link">Continue reading</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <img class="bd-placeholder-img" width="200" height="250"
-              src="https://images.unsplash.com/photo-1607785777119-7d5a00f5160d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8N3xFZ0ZZVDcxbVdSY3x8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60"
-              alt="">
-
-          </div>
+        <div class="container marketing">
+            <!-- START THE FEATURETTES -->
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">
+                        Wonderful Service!
+                        <span class="text-body-secondary">
+                            It’ll blow
+                            your mind.
+                        </span>
+                    </h2>
+                    <p class="lead">
+                        They have got my project on time with the competition with a sed highly skilled, and
+                        experienced & professional team.
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img
+                        class="bd-placeholder-img"
+                        width="270"
+                        height="230"
+                        src="user_1.jpg"
+                        alt=""
+                    >
+                    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="350" height="350" xmlns="user_1.jpg.crdownload" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> -->
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">
+                        Awesome Services!
+                        <span class="text-body-secondary">.</span>
+                    </h2>
+                    <p class="lead">
+                        They have got my project on time with the competition with a sed highly skilled, and
+                        experienced & professional team.
+                    </p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img
+                        class="bd-placeholder-img"
+                        width="270"
+                        height="230"
+                        src="user_2.jpg"
+                        alt=""
+                    >
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">
+                        Very Progressive!
+                        <span class="text-body-secondary">.</span>
+                    </h2>
+                    <p class="lead">
+                        They have got my project on time with the competition with a sed highly skilled, and
+                        experienced & professional team.
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img
+                        class="bd-placeholder-img"
+                        width="270"
+                        height="230"
+                        src="user_3.jpg"
+                        alt=""
+                    >
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <!-- /END THE FEATURETTES -->
         </div>
-      </div>
-    </div>
-  </div>
-  <footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>© 2020–2024 Rakesh sols, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-  </footer>
-
-  <!-- Optional JavaScript; choose one of the two! -->
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
+        <!-- Location -->
+        <div class="container">
+            <div class="maps_section">
+                <div class="container">
+                    <h1 class="text-uppercase text-center mb-4">Our Location</h1>
+                </div>
+                <div>
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d796.639516522016!2d78.36627965811081!3d17.45832992058807!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93c8c54aaac1%3A0xe2170556d4d7df21!2sSatya%20Towers%2C%20Kothaguda%20X%20Road%2C%20Gachibowli%20-%20Miyapur%20Rd%2C%20Laxmi%20Cyber%20City%2C%20Whitefields%2C%20HITEC%20City%2C%20Hyderabad%2C%20Telangana%20500081!5e1!3m2!1sen!2sin!4v1633670053944!5m2!1sen!2sin" width="" style="width: 100%; height: 450px; border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                    <iframe
+                        id="inlineFrameExample"
+                        title="Inline Frame Example"
+                        width="100%"
+                        height="450px"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d796.639516522016!2d78.36627965811081!3d17.45832992058807!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93c8c54aaac1%3A0xe2170556d4d7df21!2sSatya%20Towers%2C%20Kothaguda%20X%20Road%2C%20Gachibowli%20-%20Miyapur%20Rd%2C%20Laxmi%20Cyber%20City%2C%20Whitefields%2C%20HITEC%20City%2C%20Hyderabad%2C%20Telangana%20500081!5e1!3m2!1sen!2sin!4v1633670053944!5m2!1sen!2sin"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+        <footer class="container">
+            <!-- <p class="float-end"><a href="#">Back to top</a></p> -->
+            <!-- <p class="font-weight-bold">Administration : </p> -->
+            <h5 class="text-center">&#8226; Administration :</h5>
+            <p class="text-center">
+                Private Limited
+                Satya towers, H.No.2-17, 1st Floor,
+                Flat No.101, Besides Saharsha
+                Udipi Hotel, Kothaguda X road
+                Hyderabad - 500084
+                Ph: 040 35976905
+            </p>
+            <p>
+                © 2020–2024 Rakesh sols, Inc. ·
+                <a href="#">Privacy</a>
+                ·
+                <a href="#">Terms</a>
+            </p>
+            <p class="float-end">
+                <a href="#">Back to top</a>
+            </p>
+        </footer>
+        <!-- Optional JavaScript; choose one of the two! -->
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-</body>
-
+    </body>
 </html>
